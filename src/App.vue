@@ -111,11 +111,11 @@ export default {
       this.items = list.data;
       this.maxPriceItem = max.data;
     },
-    handleAdd() {
+    async handleAdd() {
+      const addedItem = await axios.post(`${API_URL}/api/items`, this.newItem);
       this.creatingItem = false;
-      this.items.push(this.newItem);
-      axios.post(`${API_URL}/api/items`, this.newItem);
       this.newItem = {};
+      this.items.push(addedItem.data);
     },
     handleCancel() {
       this.$refs.editModal.closeModal();
