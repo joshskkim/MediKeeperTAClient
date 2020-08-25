@@ -73,7 +73,7 @@ import Modal from './components/Modal.vue';
 import Items from './components/Items.vue';
 import SearchBar from './components/SearchBar.vue';
 
-const API_URL = 'https://13.57.228.42:8079';
+const API_URL = 'http://13.57.228.42:6060';
 
 export default {
   name: 'App',
