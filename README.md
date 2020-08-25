@@ -1,4 +1,4 @@
-# client
+# MediKeeper Technical Assessment Client
 
 ## Project setup
 ```
